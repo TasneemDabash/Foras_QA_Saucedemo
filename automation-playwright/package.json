@@ -1,1 +1,12 @@
-{ "name": "saucedemo-playwright", "version": "1.0.0" }
+{
+  "name": "saucedemo-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "codegen": "playwright codegen https://www.saucedemo.com/v1/index.html"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0"
+  }
+}
