@@ -1,12 +1,16 @@
 {
-  "name": "saucedemo-playwright",
+  "name": "foras-qa-playwright",
   "version": "1.0.0",
-  "private": true,
+  "description": "Playwright smoke tests for Foras QA Task 1 (SauceDemo)",
   "scripts": {
     "test": "playwright test",
-    "codegen": "playwright codegen https://www.saucedemo.com/v1/index.html"
+    "open": "playwright test --ui",
+    "trace:open": "playwright show-trace trace.zip"
   },
   "devDependencies": {
-    "@playwright/test": "^1.47.0"
+    "@playwright/test": "^1.48.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
