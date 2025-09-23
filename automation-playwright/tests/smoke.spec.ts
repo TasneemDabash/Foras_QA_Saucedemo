@@ -46,10 +46,14 @@ test.describe('SauceDemo – Smoke', () => {
   });
 
   test('logout returns to login', async ({ page }) => {
-    await login(page);
+    await login(page); 
     await page.locator('#react-burger-menu-btn').click();
-    await page.getByRole('link', { name: /logout/i }).click();
-    await expect(page).toHaveURL('https://www.saucedemo.com/v1/');
+  
+    const logoutLink = page.locator('#logout_sidebar_link');
+    await expect(logoutLink).toBeVisible();
+    await logoutLink.click();
+    await expect(page).toHaveURL(/https:\/\/www\.saucedemo\.com(\/v1)?\/$/);
     await expect(page.locator('#login-button')).toBeVisible();
   });
+  
 });
