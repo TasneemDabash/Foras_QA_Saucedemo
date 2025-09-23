@@ -1,1 +1,8 @@
 ID,Title,Preconditions,Steps,Expected,Actual,Status,Notes
+TC01,Valid Login,User at login page,Enter valid creds (standard_user/secret_sauce) and click Login,User redirected to products page,,,Pass/Fail
+TC02,Invalid Login - Locked Out User,User at login page,Enter locked_out_user/secret_sauce and click Login,Error message shown,,,Pass/Fail
+TC03,Add Product to Cart,User logged in,Click "Add to Cart" on first item,Cart badge increments by 1,,,Pass/Fail
+TC04,Checkout with Missing Postal,User logged in with items in cart,Go to checkout, leave postal blank, submit,Error message appears,,,Pass/Fail
+TC05,Logout,User logged in,Click menu → Logout,User returns to login screen,,,Pass/Fail
+TC06,Sort Z→A,User logged in,Select sort dropdown “Name (Z to A)”,Items appear sorted Z to A,,,Pass/Fail
+TC07,RTL Validation - Error Message,Switch to Hebrew UI (simulated),Trigger login error,Error message aligned properly in RTL,,,Pass/Fail
