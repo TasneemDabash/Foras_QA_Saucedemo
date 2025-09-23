@@ -1,1 +1,13 @@
-{ "name": "saucedemo-qa-automation", "version": "1.0.0" }
+{
+  "name": "saucedemo-qa-automation",
+  "version": "1.0.0",
+  "description": "Cypress automation - Task 1",
+  "scripts": {
+    "open": "cypress open",
+    "test": "cypress run",
+    "smoke": "cypress run --spec 'cypress/e2e/01_login.cy.js,cypress/e2e/04_logout.cy.js'"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0"
+  }
+}
