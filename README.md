@@ -1,6 +1,6 @@
 # Foras – QA SauceDemo
 
-THIS IS A QA submission REPO for **Foras Task 1** (Arabic/Hebrew context).  
+THIS IS A QA REPO for Task 1 (Arabic/Hebrew context).  
 It includes:
 - Test Plan (`qa/test_plan.md`)  
 - Test Cases (`qa/test_cases.csv`)  
@@ -12,8 +12,8 @@ It includes:
 ---
 
 ## Target
-- **URL:** https://www.saucedemo.com/v1/
-- **Demo users:**  
+- URL: https://www.saucedemo.com/v1/
+- Demo users:
   - `standard_user` / `secret_sauce`  
   - `locked_out_user` / `secret_sauce`  
   - `problem_user` / `secret_sauce`  
@@ -78,8 +78,8 @@ Foras_QA_Saucedemo/
 ---
 
 ## Deliverables
-- **Manual QA:** documented plan, test cases, bug reports, device matrix, accessibility & performance notes.  
-- **Automation QA:** runnable smoke and regression tests with Cypress and Playwright.  
-- **RTL/i18n Focus:** validation of R2L layouts for Arabic/Hebrew users.
+- Manual QA: documented plan, test cases, bug reports, device matrix, accessibility & performance notes.  
+- Automation QA: runnable smoke and regression tests with Cypress and Playwright.  
+- RTL/i18n Focus: validation of R2L layouts for Arabic/Hebrew users.
 
 ---
